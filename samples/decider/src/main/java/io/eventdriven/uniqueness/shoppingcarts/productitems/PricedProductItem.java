@@ -1,6 +1,9 @@
 package io.eventdriven.uniqueness.shoppingcarts.productitems;
 
+import java.util.UUID;
+
 public record PricedProductItem(
-  ProductItem productItem,
+  UUID productId,
+  int quantity,
   double unitPrice
 ) {}
